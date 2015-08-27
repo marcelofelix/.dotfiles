@@ -1,5 +1,4 @@
 [[ -s ~/.bashrc ]] && source ~/.bashrc
 [[ -s ~/dotfiles/.env ]] && source ~/dotfiles/.env
-[[ -s ~/dotfiles/.env_aws ]] && source ~/dotfiles/.env_aws
 [[ -s ~/dotfiles/.alias ]] && source ~/dotfiles/.alias
 [[ -s ~/dotfiles/.layout ]] && source ~/dotfiles/.layout
