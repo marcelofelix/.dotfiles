@@ -3,8 +3,8 @@ alias ls='ls -GFh'
 alias ls='ls -l'
 alias la='ls -la'
 alias d='docker'
-alias dcompose='docker-compose'
-alias dmachine='docker-machine'
+alias c='docker-compose'
+alias m='docker-machine'
 alias v='vim'
 
 git config --global alias.co checkout
