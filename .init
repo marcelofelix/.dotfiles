@@ -1,6 +1,7 @@
-[[ -s ~/.bashrc ]] && source ~/.bashrc
+#[[ -s ~/.bashrc ]] && source ~/.bashrc
 [[ -s ~/dotfiles/.env ]] && source ~/dotfiles/.env
 [[ -s ~/dotfiles/.alias ]] && source ~/dotfiles/.alias
 [[ -s ~/dotfiles/.layout ]] && source ~/dotfiles/.layout
+source ~/dotfiles/tmux/.tmux
 source /usr/local/etc/bash_completion.d/git-completion.bash
 source /usr/local/etc/bash_completion.d/docker

@@ -1,0 +1,3 @@
+name: help
+windows:
+    - editor: cat ~/dotfiles/tmux/help.txt
