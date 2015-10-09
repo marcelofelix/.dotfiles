@@ -9,3 +9,36 @@ cp ~/dotfiles/.tmux.conf ~/.
 tmux source-file ~/.tmux.conf
 source /usr/local/etc/bash_completion.d/git-completion.bash
 source /usr/local/etc/bash_completion.d/docker
+
+cd ~/.vim
+
+if [ ! -d "bundle/vim-autoclose" ]; then
+    cd ~/.vim/bundle
+    git clone https://github.com/Townk/vim-autoclose 
+fi
+
+if [ ! -d "bundle/ctrlp.vim" ]; then 
+    cd ~/.vim/bundle
+    git clone https://github.com/kien/ctrlp.vim
+fi
+
+if [ ! -d "bundle/emmet-vim" ]; then
+    cd ~/.vim/bundle
+    git clone https://github.com/mattn/emmet-vim 
+fi
+
+if [ ! -d "bundle/nerdtree" ]; then
+    cd ~/.vim/bundle
+    git clone https://github.com/scrooloose/nerdtree
+fi
+
+if [ ! -d "bundle/vim-easymotion" ]; then
+    cd ~/.vim/bundle
+    git clone https://github.com/easymotion/vim-easymotion
+fi
+
+if [ ! -d "bundle/vim-surround" ]; then
+    cd ~/.vim/bundle
+    git clone https://github.com/tpope/vim-surround
+fi
+
