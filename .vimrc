@@ -15,6 +15,7 @@ let mapleader=" "
 nmap <Leader>w :w<CR>
 nmap <Leader>x :x<CR>
 nmap <Leader>q :q<CR>
+nmap <Leader>qw :q!<CR>
 nmap <Leader>b :b
 nmap <Leader>ls :ls
 nmap <Leader>bn :bn<CR>
@@ -23,6 +24,7 @@ vmap <Leader>d "+d
 nmap <Leader>p "+p
 nmap <Leader>P "+P
 map <Leader> <Plug>(easymotion-prefix)
+map! <C-e> <C-y>, 
 
 vmap <Leader>p "+p
 vmap <Leader>P "+P
