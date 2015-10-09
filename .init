@@ -1,4 +1,6 @@
-#[[ -s ~/.bashrc ]] && source ~/.bashrc
+export PATH="/Users/marcelofelix/.rbenv/shims:${PATH}"
+source /usr/local/Cellar/rbenv/0.4.0/completions/rbenv.bash
+#[ [-s ~/.bashrc ]] && source ~/.bashrc
 [[ -s ~/dotfiles/.env ]] && source ~/dotfiles/.env
 [[ -s ~/dotfiles/.alias ]] && source ~/dotfiles/.alias
 cp ~/dotfiles/.vimrc ~/.
