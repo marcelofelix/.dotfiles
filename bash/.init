@@ -5,8 +5,10 @@ source /usr/local/Cellar/rbenv/0.4.0/completions/rbenv.bash
 source ~/.dotfiles/bash/.env
 source ~/.dotfiles/bash/.alias
 source ~/.dotfiles/bash/.layout
+source ~/.dotfiles/vim/.vimrc
 tmux source-file ~/.dotfiles/tmux/.tmux.conf
 source /usr/local/etc/bash_completion.d/git-completion.bash
 source /usr/local/etc/bash_completion.d/docker
-ln -s ~/.dotfiles/vim/.vimrc ~/.vimrc
-ln -s ~/.dotfiles/vim ~/.vim
+
+
+
