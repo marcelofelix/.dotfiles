@@ -14,8 +14,7 @@ let mapleader=" "
 
 nmap <Leader>w :w<CR>
 nmap <Leader>x :x<CR>
-nmap <Leader>q :q<CR>
-nmap <Leader>qw :q!<CR>
+nmap <Leader>q :q!<CR>
 nmap <Leader>b :b
 nmap <Leader>ls :ls
 nmap <Leader>bn :bn<CR>
@@ -23,6 +22,10 @@ vmap <Leader>y "+y
 vmap <Leader>d "+d
 nmap <Leader>p "+p
 nmap <Leader>P "+P
+nmap <Leader>tn :tabnew<CR>
+nmap <Leader>tc :tabclose<CR>
+nmap <Leader>tf :tabnext<CR>
+nmap <Leader>tb :tabprevious<CR>
 map <Leader> <Plug>(easymotion-prefix)
 map! <C-e> <C-y>, 
 
