@@ -11,6 +11,7 @@ let mapleader=" "
 :set backspace=2
 :set hlsearch
 :set esckeys
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 
 nmap <Leader>w :w<CR>
 nmap <Leader>x :x<CR>
@@ -22,16 +23,22 @@ vmap <Leader>y "+y
 vmap <Leader>d "+d
 nmap <Leader>p "+p
 nmap <Leader>P "+P
-nmap <Leader>tn :tabnew<CR>
+
+nmap <Leader>tt :tabnew<CR>
 nmap <Leader>tc :tabclose<CR>
-nmap <Leader>tf :tabnext<CR>
-nmap <Leader>tb :tabprevious<CR>
+nmap <Leader>tn :tabnext<CR>
+nmap <Leader>tp :tabprevious<CR>
+
+nmap <Leader>- :split<CR>
+nmap <Leader>\ :vsplit<CR>
 map <Leader> <Plug>(easymotion-prefix)
 map! <C-e> <C-y>, 
 
 vmap <Leader>p "+p
 vmap <Leader>P "+P
 nmap <Leader>n :NERDTreeToggle<CR>
+
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
 if has("autocmd")
   autocmd BufWritePre * :silent !mkdir -p %:p:h
