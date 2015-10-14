@@ -13,6 +13,10 @@ let mapleader=" "
 :set esckeys
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 
+" Map ,e and ,v to open files in the same directory as the current file
+cnoremap %% <C-R>=expand('%:h').'/'<cr>
+map <Leader>e :edit %%
+map <Leader>v :view %%
 nmap <Leader>w :w<CR>
 nmap <Leader>x :x<CR>
 nmap <Leader>q :q!<CR>
@@ -43,3 +47,17 @@ let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 if has("autocmd")
   autocmd BufWritePre * :silent !mkdir -p %:p:h
 end
+
+
+function! RenameFile()
+
+    let old_name = expand('%')
+    let new_name = input('New file name: ', expand('%'))
+    if new_name != '' && new_name != old_name
+        exec ':saveas ' . new_name
+        exec ':silent !rm ' . old_name
+        redraw!
+    endif
+endfunction
+
+map <Leader>rn :call RenameFile()<cr>
