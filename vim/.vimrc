@@ -27,6 +27,7 @@ nmap <Leader>tc :tabclose<CR>
 nmap <Leader>tf :tabnext<CR>
 nmap <Leader>tb :tabprevious<CR>
 map <Leader> <Plug>(easymotion-prefix)
+map <Leader>pp :CtrlP .<CR>
 map! <C-e> <C-y>, 
 
 vmap <Leader>p "+p
