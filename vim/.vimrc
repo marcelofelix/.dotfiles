@@ -36,6 +36,7 @@ nmap <Leader>tp :tabprevious<CR>
 nmap <Leader>- :split<CR>
 nmap <Leader>\ :vsplit<CR>
 map <Leader> <Plug>(easymotion-prefix)
+map <Leader>pp :CtrlP .<CR>
 map! <C-e> <C-y>, 
 
 vmap <Leader>p "+p

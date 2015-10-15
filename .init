@@ -9,5 +9,5 @@ tmux source-file ~/.dotfiles/tmux/.tmux.conf
 source /usr/local/etc/bash_completion.d/git-completion.bash
 source /usr/local/etc/bash_completion.d/docker
 ln -s -f ~/.dotfiles/vim/.vimrc ~/.vimrc
-ln -s -f ~/.dotfiles/vim ~/.vim
+ln -s -f /Users/marcelofelix/.dotfiles/vim /Users/marcelofelix/.vim
 eval "$(rbenv init -)"
