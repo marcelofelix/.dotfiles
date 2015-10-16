@@ -17,7 +17,7 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 map <Leader>e :edit %%
 map <Leader>v :view %%
-nmap <Leader>w :w<CR>
+nmap w :w<CR>
 nmap <Leader>x :x<CR>
 nmap <Leader>q :q!<CR>
 nmap <Leader>b :b
@@ -27,15 +27,25 @@ vmap <Leader>y "+y
 vmap <Leader>d "+d
 nmap <Leader>p "+p
 nmap <Leader>P "+P
-
 nmap <Leader>tt :tabnew<CR>
 nmap <Leader>tc :tabclose<CR>
 nmap <Leader>tn :tabnext<CR>
 nmap <Leader>tp :tabprevious<CR>
-
 nmap <Leader>- :split<CR>
 nmap <Leader>\ :vsplit<CR>
+
+"Easymotion
 map <Leader> <Plug>(easymotion-prefix)
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+map  n <Plug>(easymotion-next)
+map  N <Plug>(easymotion-prev)
+map <Leader>l <Plug>(easymotion-lineforward)
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+map <Leader>h <Plug>(easymotion-linebackward)
+let g:EasyMotion_startofline = 0
+
 map <Leader>pp :CtrlP .<CR>
 map! <C-e> <C-y>, 
 

@@ -25,3 +25,9 @@
 [submodule "vim/bundle/editorconfig-vim"]
 	path = vim/bundle/editorconfig-vim
 	url = git@github.com:editorconfig/editorconfig-vim.git
+[submodule "vim/bundle/MatchTag"]
+	path = vim/bundle/MatchTag
+	url = git@github.com:gregsexton/MatchTag.git
+[submodule "vim/bundle/vim-closetag"]
+	path = vim/bundle/vim-closetag
+	url = git@github.com:alvan/vim-closetag.git
