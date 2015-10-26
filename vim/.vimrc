@@ -17,7 +17,7 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 map <Leader>e :edit %%
 map <Leader>v :view %%
-nmap w :w<CR>
+nmap <Leader><Leader> :w<CR>
 nmap <Leader>x :x<CR>
 nmap <Leader>q :q!<CR>
 nmap <Leader>b :b
@@ -46,8 +46,12 @@ map <Leader>k <Plug>(easymotion-k)
 map <Leader>h <Plug>(easymotion-linebackward)
 let g:EasyMotion_startofline = 0
 
+"Ctrl-P
 map <Leader>pp :CtrlP .<CR>
 map! <C-e> <C-y>, 
+
+"Closetags
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.html.erb"
 
 vmap <Leader>p "+p
 vmap <Leader>P "+P
