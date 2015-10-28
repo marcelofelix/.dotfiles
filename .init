@@ -1,7 +1,7 @@
 #rbenv configuration
 export PATH="/Users/marcelofelix/.rbenv/shims:${PATH}"
 source /usr/local/Cellar/rbenv/0.4.0/completions/rbenv.bash
-
+source /usr/local/etc/bash_completion.d/git-completion.bash
 source ~/.dotfiles/bash/.env
 source ~/.dotfiles/bash/.alias
 source ~/.dotfiles/bash/.bashrc
