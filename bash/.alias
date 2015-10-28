@@ -14,3 +14,7 @@ git config --global alias.br branch
 git config --global alias.ci commit
 git config --global alias.st status
 git config --global alias.lg 'log --pretty=format:"%h %s" --graph'
+git config --global alias.mt mergetool
+git config --global alias.rs 'rebase --skip'
+git config --global alias.rc 'rebase --continue'
+git config --global alias.ra 'rebase --abort'
