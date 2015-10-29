@@ -13,7 +13,7 @@ let mapleader=" "
 :set backspace=2
 :set hlsearch
 :set esckeys
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip, *.class     " MacOSX/Linux
 
 " Map ,e and ,v to open files in the same directory as the current file
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
