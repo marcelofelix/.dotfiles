@@ -13,7 +13,7 @@ let mapleader=" "
 :set backspace=2
 :set hlsearch
 :set esckeys
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.class     " MacOSX/Linux
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.class,*.gzip,node_modules,DS_Store,.git
 
 " Map ,e and ,v to open files in the same directory as the current file
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
@@ -51,6 +51,7 @@ let g:EasyMotion_startofline = 0
 "Ctrl-P
 map <Leader>pp :CtrlP .<CR>
 map! <C-e> <C-y>, 
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 "Closetags
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.html.erb"
