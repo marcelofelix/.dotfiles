@@ -7,5 +7,7 @@ source ~/.dotfiles/bash/.alias
 source ~/.dotfiles/bash/.bashrc
 ln -s -f ~/.dotfiles/tmux/.tmux.conf ~/.tmux.conf
 ln -s -f ~/.dotfiles/vim/.vimrc ~/.vimrc
+ln -s -f ~/.dotfiles/git/.gitignore_global ~/.gitignore_global
+ln -s -f ~/.dotfiles/git/.gitconfig ~/.gitconfig
 ln -s -f /Users/marcelofelix/.dotfiles/vim /Users/marcelofelix/.vim
 eval "$(rbenv init -)"
