@@ -140,3 +140,5 @@ if exists(":Tabularize")
     nmap <Leader>a: :Tabularize /:\zs<CR>
     vmap <Leader>a: :Tabularize /:\zs<CR>
 endif
+"ag
+let g:ag_working_path_mode="r"
