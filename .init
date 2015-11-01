@@ -5,6 +5,7 @@ source /usr/local/etc/bash_completion.d/git-completion.bash
 source ~/.dotfiles/bash/.env
 source ~/.dotfiles/bash/.alias
 source ~/.dotfiles/bash/.bashrc
+source ~/.dotfiles/bash/tools.sh
 ln -s -f ~/.dotfiles/tmux/.tmux.conf ~/.tmux.conf
 ln -s -f ~/.dotfiles/vim/.vimrc ~/.vimrc
 ln -s -f ~/.dotfiles/git/.gitignore_global ~/.gitignore_global
