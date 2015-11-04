@@ -64,3 +64,6 @@
 [submodule "vim/bundle/ag.vim"]
 	path = vim/bundle/ag.vim
 	url = git@github.com:rking/ag.vim.git
+[submodule "vim/bundle/vim-jsbeautify"]
+	path = vim/bundle/vim-jsbeautify
+	url = git@github.com:maksimr/vim-jsbeautify.git

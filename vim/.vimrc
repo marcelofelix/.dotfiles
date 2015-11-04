@@ -1,5 +1,6 @@
 execute pathogen#infect()
 syntax enable
+:set regexpengine=1
 set background=dark
 colorscheme solarized
 filetype plugin indent on
@@ -22,9 +23,10 @@ map <Leader>v :view %%
 nmap <Leader><Leader> :w<CR>
 nmap <Leader>x :x<CR>
 nmap <Leader>q :q!<CR>
-nmap <Leader>b :b
-nmap <Leader>ls :ls
+nmap <Leader>b :b<CR>
+nmap <Leader>ls :ls<CR>
 nmap <Leader>bn :bn<CR>
+nmap <Leader>bp :bn<CR>
 vmap <Leader>y "+y
 vmap <Leader>d "+d
 nmap <Leader>p "+p
@@ -138,3 +140,5 @@ if exists(":Tabularize")
 endif
 "ag
 let g:ag_working_path_mode="r"
+"vim-jsbeautiry
+map <Leader>ff :call JsBeautify()<cr>
