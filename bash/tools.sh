@@ -15,4 +15,4 @@ fi
 if [ ! -x //usr/local/bin/tmuxinator ]; then
     gem install tmuxinator
 fi
-source tmuxinator.bash
+source ~/.dotfiles/bash/tmuxinator.bash
