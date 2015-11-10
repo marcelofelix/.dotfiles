@@ -23,7 +23,6 @@ map <Leader>v :view %%
 nmap <Leader><Leader> :w<CR>
 nmap <Leader>x :x<CR>
 nmap <Leader>q :q!<CR>
-nmap <Leader>b :b<CR>
 nmap <Leader>ls :ls<CR>
 nmap <Leader>bn :bn<CR>
 nmap <Leader>bp :bn<CR>
