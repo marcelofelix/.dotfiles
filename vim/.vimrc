@@ -24,8 +24,6 @@ nmap <Leader><Leader> :w<CR>
 nmap <Leader>x :x<CR>
 nmap <Leader>q :q!<CR>
 nmap <Leader>ls :ls<CR>
-nmap <Leader>bn :bn<CR>
-nmap <Leader>bp :bn<CR>
 vmap <Leader>y "+y
 vmap <Leader>d "+d
 nmap <Leader>p "+p
@@ -46,6 +44,7 @@ map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 map <Leader>h <Plug>(easymotion-linebackward)
 let g:EasyMotion_startofline = 0
+let g:EasyMotion_do_mapping = 0
 
 "Ctrl-P
 map <Leader>pp :CtrlP .<CR>
