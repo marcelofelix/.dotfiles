@@ -17,6 +17,6 @@ if [ ! -x /usr/local/bin/tmuxinator ]; then
 fi
 
 if [ ! -x /usr/local/bin/reattach-to-user-namespace ]; then
-    gem install reattach-to-user-namespace
+    brew install reattach-to-user-namespace
 fi
 source ~/.dotfiles/bash/tmuxinator.bash
