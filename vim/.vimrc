@@ -49,7 +49,7 @@ let g:EasyMotion_do_mapping = 0
 nmap <Leader>s <Plug>(easymotion-s2)
 
 "Ctrl-P
-map <Leader>pp :CtrlP .<CR>
+map <Leader>b :CtrlPBuffer<cr>
 map! <C-e> <C-y>, 
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
