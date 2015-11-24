@@ -50,6 +50,7 @@ nmap <Leader>s <Plug>(easymotion-s2)
 
 "Ctrl-P
 map <Leader>b :CtrlPBuffer<cr>
+map <Leader>m :CtrlPMRUFiles<cr>
 map! <C-e> <C-y>, 
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
