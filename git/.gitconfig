@@ -13,3 +13,5 @@
 	rs = rebase --skip
 	rc = rebase --continue
 	ra = rebase --abort
+[mergetool]
+	keepBackup = false

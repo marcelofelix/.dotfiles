@@ -14,7 +14,7 @@ let mapleader=" "
 :set backspace=2
 :set hlsearch
 :set esckeys
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.class,*.gzip,node_modules,DS_Store,*.git,*.png,*.jpg,*.gif,*.jpeg
+set wildignore+=*/dist/*,*/tmp/*,*.so,*.swp,*.zip,*.class,*.gzip,node_modules,DS_Store,*.git,*.png,*.jpg,*.gif,*.jpeg
 
 " Map ,e and ,v to open files in the same directory as the current file
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
@@ -114,6 +114,7 @@ let g:airline_symbols.whitespace = 'Ξ'
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 
 map <Leader>c :SyntasticCheck<CR>
 
