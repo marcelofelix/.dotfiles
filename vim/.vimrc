@@ -46,7 +46,7 @@ map <Leader>k <Plug>(easymotion-k)
 map <Leader>h <Plug>(easymotion-linebackward)
 let g:EasyMotion_startofline = 0
 let g:EasyMotion_do_mapping = 0
-nmap <Leader>s <Plug>(easymotion-s2)
+nmap f <Plug>(easymotion-s2)
 
 "Ctrl-P
 map <Leader>b :CtrlPBuffer<cr>
