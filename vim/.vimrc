@@ -6,6 +6,8 @@ colorscheme solarized
 filetype plugin indent on
 
 let mapleader=" "
+set number " precede each line with its line number
+set relativenumber " set relative line numbers
 :set expandtab
 :set tabstop=4
 :retab
@@ -46,7 +48,7 @@ map <Leader>k <Plug>(easymotion-k)
 map <Leader>h <Plug>(easymotion-linebackward)
 let g:EasyMotion_startofline = 0
 let g:EasyMotion_do_mapping = 0
-nmap f <Plug>(easymotion-s2)
+nmap <Leader>f <Plug>(easymotion-s2)
 
 "Ctrl-P
 map <Leader>b :CtrlPBuffer<cr>
@@ -141,4 +143,4 @@ endif
 "ag
 let g:ag_working_path_mode="r"
 "vim-jsbeautiry
-map <Leader>ff :call JsBeautify()<cr>
+map <Leader><C-f> :call JsBeautify()<cr>
