@@ -24,7 +24,8 @@ map <Leader>e :edit %%
 map <Leader>v :view %%
 nmap <Leader><Leader> :w<CR>
 nmap <Leader>x :x<CR>
-nmap <Leader>q :q!<CR>
+nmap <Leader>q :bdelete<CR>
+nmap <Leader>Q :q!<CR>
 nmap <Leader>ls :ls<CR>
 vmap <Leader>y "+y
 vmap <Leader>d "+d
