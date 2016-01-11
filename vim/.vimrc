@@ -6,8 +6,8 @@ colorscheme solarized
 filetype plugin indent on
 
 let mapleader=" "
-set number " precede each line with its line number
-set relativenumber " set relative line numbers
+" set number " precede each line with its line number
+" set relativenumber " set relative line numbers
 :set expandtab
 :set tabstop=4
 :retab
