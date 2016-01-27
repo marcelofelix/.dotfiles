@@ -5,3 +5,7 @@ function create_dev_machine(){
 function envdocker(){
 	eval $(docker-machine env dev)
 }
+
+function docker_clean_volumes(){
+    docker run --rm -v /var/run/docker.sock:/var/run/docker.sock:ro -v /var/lib/docker:/var/lib/docker martin/docker-cleanup-volumes
+}
