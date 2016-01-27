@@ -15,3 +15,6 @@
 	ra = rebase --abort
 [mergetool]
 	keepBackup = false
+[credential]
+	; helper = osxkeychain
+    username = marcelofelix
