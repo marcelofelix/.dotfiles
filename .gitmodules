@@ -67,3 +67,6 @@
 [submodule "vim/bundle/vim-repeat"]
 	path = vim/bundle/vim-repeat
 	url = git@github.com:tpope/vim-repeat.git
+[submodule "vim/bundle/vim-textobj-user"]
+	path = vim/bundle/vim-textobj-user
+	url = git@github.com:kana/vim-textobj-user.git

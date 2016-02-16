@@ -4,3 +4,7 @@
 *.swp
 .settings
 *.swo
+/vendor/
+.classpath
+.project
+.settings

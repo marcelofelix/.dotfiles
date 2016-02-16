@@ -12,4 +12,5 @@ ln -s -f ~/.dotfiles/vim/.vimrc ~/.vimrc
 ln -s -f ~/.dotfiles/git/.gitignore_global ~/.gitignore_global
 ln -s -f ~/.dotfiles/git/.gitconfig ~/.gitconfig
 ln -s -f /Users/marcelofelix/.dotfiles/vim /Users/marcelofelix/.vim
+ln -s -f /Users/marcelofelix/.dotfiles/config/.editorconfig /Users/marcelofelix/.editorconfig
 eval "$(rbenv init -)"
