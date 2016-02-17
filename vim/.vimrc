@@ -54,8 +54,8 @@ nmap <Leader>f <Plug>(easymotion-s2)
 "Ctrl-P
 map <Leader>b :CtrlPBuffer<cr>
 map <Leader>m :CtrlPMRUFiles<cr>
-map! <C-e> <C-y>, 
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+map! <C-e> <C-y>,
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git|vendor'
 
 "Closetags
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.html.erb"
