@@ -55,7 +55,7 @@ nmap <Leader>f <Plug>(easymotion-s2)
 map <Leader>b :CtrlPBuffer<cr>
 map <Leader>m :CtrlPMRUFiles<cr>
 map! <C-e> <C-y>,
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git|vendor'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|vendor\|bower_components'
 
 "Closetags
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.html.erb"
@@ -63,8 +63,6 @@ let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.html.erb"
 vmap <Leader>p "+p
 vmap <Leader>P "+P
 nmap <Leader>n :NERDTreeToggle<CR>
-
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
 if has("autocmd")
     autocmd BufWritePre * :silent !mkdir -p %:p:h
