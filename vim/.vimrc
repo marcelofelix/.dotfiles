@@ -26,7 +26,6 @@ nmap <Leader><Leader> :w<CR>
 nmap <Leader>x :x<CR>
 nmap <Leader>q :bdelete<CR>
 nmap <Leader>Q :q!<CR>
-nmap <Leader>ls :ls<CR>
 vmap <Leader>y "+y
 vmap <Leader>d "+d
 nmap <Leader>p "+p
@@ -40,8 +39,8 @@ nmap <Leader>\ :vsplit<CR>
 
 "Easymotion
 map <Leader> <Plug>(easymotion-prefix)
-map <Leader>/ <Plug>(easymotion-sn)
-map <Leader>s <Plug>(easymotion-s2)
+" map <Leader>/ <Plug>(easymotion-sn)
+map <Leader>s <Plug>(easymotion-sn)
 omap <Leader>/ <Plug>(easymotion-tn)
 map <Leader>l <Plug>(easymotion-lineforward)
 map <Leader>j <Plug>(easymotion-j)
