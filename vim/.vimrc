@@ -40,7 +40,7 @@ nmap <Leader>\ :vsplit<CR>
 "Easymotion
 map <Leader> <Plug>(easymotion-prefix)
 " map <Leader>/ <Plug>(easymotion-sn)
-map <Leader>s <Plug>(easymotion-sn)
+map <Leader>f <Plug>(easymotion-sn)
 omap <Leader>/ <Plug>(easymotion-tn)
 map <Leader>l <Plug>(easymotion-lineforward)
 map <Leader>j <Plug>(easymotion-j)
@@ -48,7 +48,7 @@ map <Leader>k <Plug>(easymotion-k)
 map <Leader>h <Plug>(easymotion-linebackward)
 let g:EasyMotion_startofline = 0
 let g:EasyMotion_do_mapping = 0
-nmap <Leader>f <Plug>(easymotion-s2)
+" nmap <Leader>f <Plug>(easymotion-s2)
 
 "Ctrl-P
 map <Leader>b :CtrlPBuffer<cr>
@@ -142,3 +142,7 @@ endif
 let g:ag_working_path_mode="r"
 "vim-jsbeautiry
 map <Leader><C-f> :call JsBeautify()<cr>
+
+"Rails
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
