@@ -12,11 +12,6 @@ if [ ! -d ~/.nvm ]; then
     curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
 fi
 
-if [ ! -x /usr/local/bin/tmuxinator ]; then
-    gem install tmuxinator
-fi
-
 if [ ! -x /usr/local/bin/reattach-to-user-namespace ]; then
     brew install reattach-to-user-namespace
 fi
-source ~/.dotfiles/bash/tmuxinator.bash
