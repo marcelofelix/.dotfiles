@@ -35,6 +35,7 @@ do
 	fi
 done
 
+
 ln -s -f "$DOTFILES_DIR"/vim "$HOME"/.vim
 
 eval "$(rbenv init -)"
