@@ -7,5 +7,9 @@ function envdocker(){
 }
 
 function docker_clean_volumes(){
-    docker run --rm -v /var/run/docker.sock:/var/run/docker.sock:ro -v /var/lib/docker:/var/lib/docker martin/docker-cleanup-volumes
+  docker run --rm -v /var/run/docker.sock:/var/run/docker.sock:ro -v /var/lib/docker:/var/lib/docker martin/docker-cleanup-volumes
+}
+
+function remove_untagged_images(){
+  docker rmi $(docker images | grep "^<none>" | awk "{print $3}")
 }
