@@ -100,3 +100,6 @@
 [submodule "vim/bundle/vim-abolish"]
 	path = vim/bundle/vim-abolish
 	url = https://github.com/tpope/vim-abolish.git
+[submodule "vim/bundle/vim-rspec"]
+	path = vim/bundle/vim-rspec
+	url = https://github.com/thoughtbot/vim-rspec.git

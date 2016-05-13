@@ -130,3 +130,8 @@ let g:ag_working_path_mode="r"
 "vim-jsbeautiry
 map <Leader><C-f> :call JsBeautify()<cr>
 
+" RSpec.vim mappings
+map <Leader>cs :call RunCurrentSpecFile()<CR>
+map <Leader>ns :call RunNearestSpec()<CR>
+map <Leader>ls :call RunLastSpec()<CR>
+map <Leader>as :call RunAllSpecs()<CR>
