@@ -16,7 +16,7 @@ let mapleader=" "
 :set backspace=2
 :set hlsearch
 :set esckeys
-set wildignore+=*/dist/*,*/tmp/*,*.so,*.swp,*.zip,*.class,*.gzip,node_modules,DS_Store,*.git,*.png,*.jpg,*.gif,*.jpeg,*/vendor/*,*/coverage/*
+set wildignore+=dist,tmp,*.so,*.swp,*.zip,*.class,*.gzip,node_modules,DS_Store,*.git,*.png,*.jpg,*.gif,*.jpeg,vendor,coverage,public\/swagger
 
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 nmap <Leader><Leader> :w<CR>
