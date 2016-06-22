@@ -37,6 +37,8 @@ done
 
 
 rm "$HOME"/.vim
+rm "$HOME"/.git_template
 ln -s -f "$DOTFILES_DIR"/vim "$HOME"/.vim
+ln -s -f "$DOTFILES_HOME"/git_template "$HOME"/.git_template
 
 eval "$(rbenv init -)"

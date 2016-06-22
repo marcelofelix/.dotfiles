@@ -18,3 +18,5 @@
 [credential]
 	; helper = osxkeychain
     username = marcelofelix
+[init]
+	templatedir = ~/.git_template
