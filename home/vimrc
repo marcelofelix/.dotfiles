@@ -7,8 +7,8 @@ filetype plugin indent on
 runtime macros/matchit.vim
 
 let mapleader=" "
-" set number " precede each line with its line number
-" set relativenumber " set relative line numbers
+set relativenumber " set relative line numbers
+set number " precede each line with its line number
 :set expandtab
 :set tabstop=4
 :retab
@@ -16,6 +16,7 @@ let mapleader=" "
 :set number
 :set backspace=2
 :set hlsearch
+:set incsearch
 :set esckeys
 set wildignore+=dist,tmp,*.so,*.swp,*.zip,*.class,*.gzip,node_modules,DS_Store,*.git,*.png,*.jpg,*.gif,*.jpeg,vendor
 
