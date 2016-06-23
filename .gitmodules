@@ -94,3 +94,6 @@
 [submodule "vim/bundle/vim-ruby"]
 	path = vim/bundle/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
+[submodule "vim/bundle/vim-tags"]
+	path = vim/bundle/vim-tags
+	url = https://github.com/szw/vim-tags.git
