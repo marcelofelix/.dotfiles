@@ -10,6 +10,7 @@ alias tm='tmux'
 alias cl='clear'
 alias reload='source ~/.bash_profile'
 alias code='cd ~/Code'
+alias rubocop='bundle exec rubocop'
 
 git config --global alias.co checkout
 git config --global alias.br branch
