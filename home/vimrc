@@ -31,6 +31,7 @@ nmap <Leader>p "+p
 nmap <Leader>P "+P
 nmap <Leader>- :split<CR>
 nmap <Leader>\ :vsplit<CR>
+nmap <Space><Space> :wa<CR>
 nnoremap L $
 nnoremap H ^
 
