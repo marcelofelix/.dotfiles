@@ -9,3 +9,4 @@
 .project
 .settings
 tags
+node_modules
