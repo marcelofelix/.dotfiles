@@ -10,3 +10,4 @@
 .settings
 tags
 node_modules
+.nvmrc
