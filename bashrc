@@ -48,3 +48,4 @@ function parse_git_dirty {
 
 export PS1="\[\e[36m\]\u\[\e[m\] @ \[\e[32m\]\W\[\e[m\]\[\e[37m\]\`parse_git_branch\`\[\e[m\]\n →"
 export PS2="| →"
+source ~/.profile

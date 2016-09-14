@@ -9,3 +9,13 @@ function docker_clean_volumes(){
 function remove_untagged_images(){
   docker rmi $(docker images | grep "^<none>" | awk "{print $3}")
 }
+
+function install() {
+  brew bundle
+}
+
+function update_vim() {
+  cd ~/.dotfiles
+  git submodule update --init --recursive
+  cd -
+}
