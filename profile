@@ -6,7 +6,7 @@ ln -fs ~/.dotfiles/gitconfig ~/.gitconfig
 ln -fs ~/.dotfiles/gitignore_global ~/.gitignore_global
 ln -fs ~/.dotfiles/profile ~/.profile
 
-source .alias
-source .env
-source .functions
+source ~/.dotfiles/.alias
+source ~/.dotfiles/.env
+source ~/.dotfiles/.functions
 
