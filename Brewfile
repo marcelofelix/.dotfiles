@@ -24,6 +24,7 @@ brew 'homebrew/dupes/grep'
 # Install Binaries
 brew 'awscli'
 brew 'git'
+brew 'bash-completion'
 
 # Quicklook
 cask 'qlcolorcode'
