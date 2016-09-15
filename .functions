@@ -10,8 +10,14 @@ function remove_untagged_images(){
   docker rmi $(docker images | grep "^<none>" | awk "{print $3}")
 }
 
+function reload() {
+  souce ~/.bash_profile
+}
+
 function install() {
+  cd ~/.dotfiles
   brew bundle
+  cd -
 }
 
 function update_vim() {
