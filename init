@@ -11,6 +11,7 @@ function dotfiles() {
   ln -fs ~/.dotfiles/gitconfig ~/.gitconfig
   ln -fs ~/.dotfiles/gitignore_global ~/.gitignore_global
   ln -fs ~/.dotfiles/vim ~/.vim
+  ln -fs ~/.dotfiles/spacemacs ~/.spacemacs
 }
 
 dotfiles
