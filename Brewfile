@@ -25,6 +25,7 @@ brew 'homebrew/dupes/grep'
 brew 'awscli'
 brew 'git'
 brew 'bash-completion'
+brew 'imagemagick'
 
 # Quicklook
 cask 'qlcolorcode'
