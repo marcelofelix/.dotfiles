@@ -13,6 +13,10 @@
 	rs = rebase --skip
 	rc = rebase --continue
 	ra = rebase --abort
+  recent = for-each-ref --count=10 --sort=-committerdate refs/heads/ --format="%(refname:short)"
+  overview = log --all --since='2 weeks' --oneline --no-merges
+  recap = log --all --oneline --no-merges --author=<olivera.felix@gmail.com>
+  today = log --since=00:00:00 --all --no-merges --oneline --author=<your email address>
 [mergetool]
 	keepBackup = false
 [credential]
