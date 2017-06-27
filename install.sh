@@ -1,12 +1,21 @@
 sudo apt-key adv -qq --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
 echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add
+
+sudo add-apt-repository \
+  "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) \
+  stable"
+
 sudo apt-get -qq update
-apti -y -qq git
-apti -y -qq tmux
-apti -y -qq xclip
-apti -y -qq curl
-apti -y -qq spotify-client
-apti -y -qq maven
+sudo apt install -y -qq git
+sudo apt install -y -qq tmux
+sudo apt install -y -qq xclip
+sudo apt install -y -qq curl
+sudo apt install -y -qq spotify-client
+sudo apt install -y -qq maven
+sudo apt install -y -qq docker.io
 
 if [ -d "~/.rbenv" ]; then
   git clone https://github.com/rbenv/rbenv.git ~/.rbenv
@@ -29,3 +38,14 @@ apti -y -qq default-jdk
 if [ -d "~/.dotfiles/tmux/plugins/tpm" ]; then
   git clone https://github.com/tmux-plugins/tpm ~/.dotfiles/tmux/plugins/tpm
 fi
+
+sudo apt-get install -y -qq\
+  linux-image-extra-$(uname -r) \
+  linux-image-extra-virtual
+
+sudo apt-get install -y -qq \
+  apt-transport-https \
+  ca-certificates \
+  curl \
+  software-properties-common
+sudo apt-get install -y -qq docker-ce

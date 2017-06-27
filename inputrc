@@ -3,3 +3,4 @@ Control-n: next-history
 Control-p: previous-history
 Control-j: backward-word
 Control-k: forward-word
+Control-v: paste-from-clipboard
