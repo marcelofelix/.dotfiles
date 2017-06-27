@@ -2,7 +2,7 @@ execute pathogen#infect()
 syntax enable
 :set regexpengine=1
 set background=dark
-colorscheme solarized
+" colorscheme solarized
 filetype plugin indent on
 runtime macros/matchit.vim
 
