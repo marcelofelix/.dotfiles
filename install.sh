@@ -25,3 +25,7 @@ if [ -d "~/.nvm" ]; then
 fi
 
 apti -y -qq default-jdk
+
+if [ -d "~/.dotfiles/tmux/plugins/tpm" ]; then
+  git clone https://github.com/tmux-plugins/tpm ~/.dotfiles/tmux/plugins/tpm
+fi
