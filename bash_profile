@@ -1,6 +1,3 @@
-if [ -f ~/.env_local ]; then
-   source ~/.env_local
-fi
-
+source ~/.dotfiles/env.sh
 source ~/.bashrc
 source ~/.profile

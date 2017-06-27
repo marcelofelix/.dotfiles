@@ -15,6 +15,5 @@ function dotfiles() {
 
 dotfiles
 source ~/.bash_profile
-install
 
 

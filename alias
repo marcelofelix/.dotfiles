@@ -11,3 +11,4 @@ alias cl='clear'
 alias reload='source ~/.bash_profile'
 alias code='cd ~/Code'
 alias rubocop='bundle exec rubocop'
+alias apti="sudo apt-get install"

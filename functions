@@ -14,11 +14,6 @@ function reload() {
   souce ~/.bash_profile
 }
 
-function install() {
-  cd ~/.dotfiles
-  cd -
-}
-
 function update_vim() {
   cd ~/.dotfiles
   git submodule update --init --recursive
