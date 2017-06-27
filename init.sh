@@ -1,9 +1,8 @@
 #!/bin/bash
 
 function dotfiles() {
-  ln -fs ~/.dotfiles/bash_profile ~/.bash_profile
   ln -fs ~/.dotfiles/bashrc ~/.bashrc
-  ln -fs ~/.dotfiles/profile ~/.profile
+  ln -fs ~/.dotfiles/bash_profile ~/.bash_profile
   ln -fs ~/.dotfiles/vimrc ~/.vimrc
   ln -fs ~/.dotfiles/tmux.conf ~/.tmux.conf
   ln -fs ~/.dotfiles/inputrc ~/.inputrc

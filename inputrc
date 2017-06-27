@@ -1,3 +1,5 @@
-Control-k: clear-screen
+Control-l: clear-screen
 Control-n: next-history
 Control-p: previous-history
+Control-j: backward-word
+Control-k: forward-word
