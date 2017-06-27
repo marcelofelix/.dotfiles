@@ -1,5 +1,3 @@
-alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
-alias ls='ls -GFh'
 alias ls='ls -l'
 alias la='ls -la'
 alias b='bundle'

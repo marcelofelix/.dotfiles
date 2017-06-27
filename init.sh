@@ -11,14 +11,10 @@ function dotfiles() {
   ln -fs ~/.dotfiles/gitconfig ~/.gitconfig
   ln -fs ~/.dotfiles/gitignore_global ~/.gitignore_global
   ln -fs ~/.dotfiles/vim ~/.vim
-  ln -fs ~/.dotfiles/spacemacs ~/.spacemacs
-  ln -fs ~/.dotfiles/Brewfile ~/Brewfile
 }
 
 dotfiles
 source ~/.bash_profile
 install
 
-source /usr/local/Cellar/rbenv/0.4.0/completions/rbenv.bash
-source /usr/local/etc/bash_completion.d/git-completion.bash
 

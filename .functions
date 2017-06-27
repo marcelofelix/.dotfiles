@@ -16,7 +16,6 @@ function reload() {
 
 function install() {
   cd ~/.dotfiles
-  brew bundle
   cd -
 }
 
