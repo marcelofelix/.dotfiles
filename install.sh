@@ -9,6 +9,8 @@ sudo add-apt-repository \
   stable"
 
 sudo apt-get -qq update
+sudo apt-get remove -y vim
+sudo apt-get install -y vim-gtk
 sudo apt install -y -qq git
 sudo apt install -y -qq tmux
 sudo apt install -y -qq xclip

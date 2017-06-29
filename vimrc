@@ -34,6 +34,7 @@ nmap <Leader>\ :vsplit<CR>
 nmap <Space><Space> :wa<CR>
 nnoremap L $
 nnoremap H ^
+set clipboard=unnamed
 
 "Command-t
 let g:CommandTWildIgnore=&wildignore . ",node_modules,DS_Store,git,vendor,bower_components,doc,coverage,swagger"
