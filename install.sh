@@ -7,6 +7,7 @@ sudo add-apt-repository \
   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
   $(lsb_release -cs) \
   stable"
+sudo add-apt-repository ppa:git-core/ppa -y
 
 sudo apt-get -qq update
 sudo apt-get remove -y vim
