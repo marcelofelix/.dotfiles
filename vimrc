@@ -36,9 +36,6 @@ nnoremap L $
 nnoremap H ^
 set clipboard=unnamed
 
-"Command-t
-let g:CommandTWildIgnore=&wildignore . ",node_modules,DS_Store,git,vendor,bower_components,doc,coverage,swagger"
-
 "Closetags
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.html.erb"
 

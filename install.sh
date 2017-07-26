@@ -1,56 +1,19 @@
-sudo apt-get update
-sudo apt-get install
-sudo apt-key adv -qq --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
-echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
-
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add
-
-sudo add-apt-repository \
-  "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-  $(lsb_release -cs) \
-  stable"
-sudo add-apt-repository ppa:git-core/ppa -y
-
-sudo apt-get -qq update
-sudo apt-get remove -y vim
-sudo apt-get install -y vim-gtk
-sudo apt-get install -y -qq git
-sudo apt-get install -y -qq tmux
-sudo apt-get install -y -qq xclip
-sudo apt-get install -y -qq curl
-sudo apt-get install -y -qq spotify-client
-sudo apt-get install -y -qq maven
-sudo apt-get install -y -qq docker.io
-
-if [ -d "~/.rbenv" ]; then
-  git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-  cd ~/.rbenv && src/configure && make -C src
-  cd -
-fi
-
-if [ -d "~/.rbenv/plugins/ruby-build" ]; then
-  git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
-  cd ~/.rbenv/plugins/ruby-build
-  sudo ./install.sh
-fi
-
-if [ -d "~/.nvm" ]; then
-  wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
-fi
-
-apti -y -qq default-jdk
+p -S gvim --noconfirm
+p -S xclip --noconfirm
+p -S tmux --noconfirm
+p -S maven --noconfirm
+p -S docker --noconfirm
+p -S docker-compose --noconfirm
+p -Syyu openssl-1.0 gcc5 --noconfirm
+p -S aws-cli --noconfirm
+# p -S base-devel yaourt --noconfirm
+# sudo yaourt rbenv
+# sudo yaourt google-chrome
 
 if [ -d "~/.dotfiles/tmux/plugins/tpm" ]; then
   git clone https://github.com/tmux-plugins/tpm ~/.dotfiles/tmux/plugins/tpm
 fi
 
-sudo apt-get install -y -qq\
-  linux-image-extra-$(uname -r) \
-  linux-image-extra-virtual
-
-sudo apt-get install -y -qq \
-  apt-transport-https \
-  ca-certificates \
-  curl \
-  software-properties-common
-sudo apt-get install -y -qq docker-ce
+if [ -d "~/.dotfiles/tmux/plugins/tmux-yank" ]; then
+  git clone https://github.com/tmux-plugins/tmux-yank.git ~/.dotfiles/tmux/plugins/tmux-yank
+fi
