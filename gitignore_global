@@ -4,6 +4,7 @@
 *.iml
 .idea
 *.swp
+*.jar
 .settings
 *.swo
 /vendor/

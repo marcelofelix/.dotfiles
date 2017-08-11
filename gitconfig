@@ -1,8 +1,8 @@
 [user]
-	name = Marcelo Felix
+	name = Marcelo
 	email = olivera.felix@gmail.com
 [core]
-	excludesfile = /Users/marcelofelix/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [alias]
 	co = checkout
 	br = branch
@@ -19,6 +19,10 @@
   today = log --since=00:00:00 --all --no-merges --oneline --author=<your email address>
 [mergetool]
 	keepBackup = false
+	prompt = false
 [credential]
 	; helper = osxkeychain
     username = marcelofelix
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
