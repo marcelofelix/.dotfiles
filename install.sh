@@ -17,3 +17,5 @@ fi
 if [ -d "~/.dotfiles/tmux/plugins/tmux-yank" ]; then
   git clone https://github.com/tmux-plugins/tmux-yank.git ~/.dotfiles/tmux/plugins/tmux-yank
 fi
+
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
