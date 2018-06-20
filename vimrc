@@ -19,7 +19,8 @@ set number " precede each line with its line number
 :set hlsearch
 :set incsearch
 :set esckeys
-set wildignore+=dist,tmp,*.so,*.swp,*.zip,*.class,*.gzip,node_modules,DS_Store,*.git,*.png,*.jpg,*.gif,*.jpeg,vendor
+set wildignore+=coverage,dist,tmp,*.so,*.swp,*.zip,*.class,*.gzip,node_modules,DS_Store,*.git,*.png,*.jpg,*.gif,*.jpeg,vendor,doc
+set filetype=vue.html
 
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 nmap <Leader><Leader> :w<CR>

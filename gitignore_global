@@ -8,6 +8,8 @@
 .settings
 *.swo
 /vendor/
+doc
+coverage
 .classpath
 .project
 .settings
