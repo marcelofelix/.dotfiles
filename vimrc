@@ -161,3 +161,5 @@ endif
 let g:ag_working_path_mode="r"
 "vim-jsbeautiry
 map <Leader><C-f> :call JsBeautify()<cr>
+"nerdtree
+let NERDTreeShowHidden=1
