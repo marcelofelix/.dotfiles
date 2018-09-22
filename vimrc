@@ -35,6 +35,8 @@ Plugin 'kana/vim-textobj-user'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'posva/vim-vue'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'othree/html5.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -80,7 +82,7 @@ nnoremap H ^
 set clipboard=unnamed
 
 "Closetags
-let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.html.erb"
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.html.erb,*.vue"
 
 nmap <Leader>n :NERDTreeToggle<CR>
 
