@@ -42,7 +42,8 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 
-syntax enable
+colo desert
+syntax on
 :set regexpengine=1
 set background=dark
 " colorscheme solarized
