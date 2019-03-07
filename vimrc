@@ -37,6 +37,7 @@ Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'posva/vim-vue'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'othree/html5.vim'
+Plugin 'mileszs/ack.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -49,6 +50,7 @@ set background=dark
 " colorscheme solarized
 filetype plugin indent on
 runtime macros/matchit.vim
+let g:ruby_indent_block_style = 'do'
 
 let mapleader=" "
 let g:ctrlp_show_hidden = 1
@@ -159,6 +161,9 @@ if exists(":Tabularize")
     vmap <Leader>a= :Tabularize /=<CR>
     nmap <Leader>a: :Tabularize /:\zs<CR>
     vmap <Leader>a: :Tabularize /:\zs<CR>
+endif
+if &diff
+    colorscheme github
 endif
 "ag
 let g:ag_working_path_mode="r"
